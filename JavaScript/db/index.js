@@ -8,7 +8,6 @@ var promise = require('bluebird');
 // because event 'extend' is called multiple times:
 var repos = {
     users: require('./repos/users'),
-    products: require('./repos/products')
 };
 
 // pg-promise initialization options:
@@ -22,7 +21,6 @@ var options = {
         // Do not use 'require()' here, because this event occurs for every task
         // and transaction being executed, which should be as fast as possible.
         obj.users = repos.users(obj);
-        obj.products = repos.products(obj);
     }
 
 };

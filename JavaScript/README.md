@@ -1,6 +1,8 @@
-## JavaScript implementation of pg-promise-demo
+## Demonstration of query error handling for Pull request to pg-promise repository
 
-This implementation uses ES6 syntax, and therefore requires Node.JS 4.x or later.
+This demo uses code from the Demo provideed by vitaly-t and located at https://github.com/vitaly-t/pg-promise-demo
+
+All code has been removed except the part necessary to perform the user add command. A typo has been added unpurpously in the users file to demonstrate that the provided error message is not descriptive for this case. Pg-promise returns "Invalid query format." but a "Query is not defined" would be more appropriate.
 
 ### Prerequisites
 
